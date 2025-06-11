@@ -1,6 +1,9 @@
 root_Artifact: artifact
 
 data_ingestion:
-  root_dir: path 
-  source_path: path
-  
+  root_dir: artifact/data_ingestion
+  source_path: 'emineyetm/fake-news-detection-datasets'
+  local_file_dir : artifact/data_ingestion
+  fake_data : artifact/data_ingestion/News _dataset/Fake.csv
+  true_data : artifact/data_ingestion/News _dataset/True.csv
+  df_output_path :  artifact/data_ingestion/Data.csv
