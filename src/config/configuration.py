@@ -1,6 +1,6 @@
 from src.constants import *
 from src.utils.common import read_yaml_file,create_dir
-from src.entity import DataIngestionConfig
+from src.entity import DataIngestionConfig,DataTransformationConfig
 
 class ConfigurationManager:
     def __init__(self,config=CONFIG_FILE_PATH,
@@ -21,3 +21,14 @@ class ConfigurationManager:
             df_output_path = Path(config.df_output_path)
         )
         return data_ingestion_config
+    
+
+    def getDataTransformation(self)->DataTransformationConfig:
+        config=self.config.data_transformation
+        create_dir([config.root_dir])
+        data_transformation_config = DataTransformationConfig(
+            root_dir=Path(config.root_dir),
+            df_output_path=Path(config.df_output_path),
+            tranformed_data = Path(config.tranformed_data)
+        )
+        return data_transformation_config

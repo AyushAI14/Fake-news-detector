@@ -1,0 +1,26 @@
+Gtk-Message: 22:10:46.490: Failed to load module "xapp-gtk3-module"
+
+(spotify:7): libnotify-WARNING **: 22:10:52.854: Running in confined mode, using Portal notifications. Some features and hints won't be supported
+libnotify-Message: 22:11:02.050: App Name is not available when using Portal Notifications
+*** stack smashing detected ***: terminated
+*** stack smashing detected ***: terminated
+*** stack smashing detected ***: terminated
+*** stack smashing detected ***: terminated
+*** stack smashing detected ***: terminated
+*** stack smashing detected ***: terminated
+Warning: vkCreateInstance: Found no drivers!
+Warning: vkCreateInstance failed with VK_ERROR_INCOMPATIBLE_DRIVER
+    at CheckVkSuccessImpl (../../third_party/dawn/src/dawn/native/vulkan/VulkanError.cpp:106)
+
+*** stack smashing detected ***: terminated
+libnotify-Message: 22:14:23.349: App Name is not available when using Portal Notifications
+libnotify-Message: 22:36:49.365: App Name is not available when using Portal Notifications
+libnotify-Message: 22:39:35.145: App Name is not available when using Portal Notifications
+libnotify-Message: 22:42:22.948: App Name is not available when using Portal Notifications
+libnotify-Message: 22:45:29.537: App Name is not available when using Portal Notifications
+libnotify-Message: 22:48:19.500: App Name is not available when using Portal Notifications
+libnotify-Message: 22:51:18.518: App Name is not available when using Portal Notifications
+libnotify-Message: 22:54:17.214: App Name is not available when using Portal Notifications
+libnotify-Message: 22:57:46.403: App Name is not available when using Portal Notifications
+libnotify-Message: 23:00:39.198: App Name is not available when using Portal Notifications
+libnotify-Message: 23:04:02.202: App Name is not available when using Portal Notifications

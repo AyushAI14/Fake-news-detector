@@ -9,6 +9,7 @@ api.authenticate()
 class DataIngestion:
     def __init__(self,config=DataIngestionConfig):
         self.config=config
+        
 
     def get_data(self):
         """

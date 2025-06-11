@@ -11,3 +11,8 @@ class DataIngestionConfig:
     df_output_path:Path
 
 
+@dataclass
+class DataTransformationConfig:
+    root_dir: Path
+    df_output_path :  Path
+    tranformed_data: Path
