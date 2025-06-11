@@ -1,0 +1,6 @@
+root_Artifact: artifact
+
+data_ingestion:
+  root_dir: path 
+  source_path: path
+  
