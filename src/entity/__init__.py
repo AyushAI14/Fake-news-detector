@@ -16,3 +16,11 @@ class DataTransformationConfig:
     root_dir: Path
     df_output_path :  Path
     tranformed_data: Path
+
+
+@dataclass
+class ModelEvalutionConfig:
+    root_dir: Path
+    model_path :  Path
+    tokenizer_path: Path
+    prediction_results : Path

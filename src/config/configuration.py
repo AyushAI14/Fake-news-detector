@@ -1,6 +1,6 @@
 from src.constants import *
 from src.utils.common import read_yaml_file,create_dir
-from src.entity import DataIngestionConfig,DataTransformationConfig
+from src.entity import DataIngestionConfig,DataTransformationConfig,ModelEvalutionConfig
 
 class ConfigurationManager:
     def __init__(self,config=CONFIG_FILE_PATH,
@@ -32,3 +32,14 @@ class ConfigurationManager:
             tranformed_data = Path(config.tranformed_data)
         )
         return data_transformation_config
+    
+    def getModelEvalution(self)->ModelEvalutionConfig:
+        config=self.config.model_evalution
+        create_dir([config.root_dir])
+        model_evalution_config = ModelEvalutionConfig(
+            root_dir=Path(config.root_dir),
+            model_path=Path(config.model_path),
+            tokenizer_path = Path(config.tokenizer_path),
+            prediction_results=Path(config.prediction_results)
+        )
+        return model_evalution_config
