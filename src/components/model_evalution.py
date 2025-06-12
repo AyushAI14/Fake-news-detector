@@ -39,3 +39,4 @@ class ModelEvalution:
         with open(self.config.prediction_results, mode='a', newline='') as f:
             writer = csv.writer(f)
             writer.writerow([text, label, confidence])
+        return {"prediction": label, "confidence": round(confidence, 4)}

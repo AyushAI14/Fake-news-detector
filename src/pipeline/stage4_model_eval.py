@@ -9,4 +9,4 @@ class ModelEvalutionPipeline:
         config=ConfigurationManager()
         getmodelevalConfig = config.getModelEvalution()
         modelEval = ModelEvalution(config=getmodelevalConfig)
-        modelEval.predict(text)
+        return modelEval.predict(text)
