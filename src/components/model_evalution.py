@@ -33,8 +33,8 @@ class ModelEvalution:
             confidence = probs[0][prediction].item()
 
         label = "Real News" if prediction == 1 else "Fake News"
-        print(f"📰 Text: {text}")
-        print(f"📢 Prediction: {label} ({confidence:.4f} confidence)")
+        print(f"Text: {text}")
+        print(f"Prediction: {label} ({confidence:.4f} confidence)")
 
         with open(self.config.prediction_results, mode='a', newline='') as f:
             writer = csv.writer(f)
